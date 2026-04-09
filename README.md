@@ -2,8 +2,8 @@
 
 ## 📌 Overview
 
-This project implements a **Convolutional Neural Network (CNN)** to classify images of dogs and cats.
-The model is trained on a real-world dataset and achieves strong performance on unseen validation data.
+This project builds a **Convolutional Neural Network (CNN)** to classify images as either dogs or cats.
+The model is trained on a real-world dataset and achieves strong performance on validation data.
 
 ---
 
@@ -12,35 +12,38 @@ The model is trained on a real-world dataset and achieves strong performance on 
 * Source: Kaggle Dog vs Cat Dataset
 * https://www.kaggle.com/datasets/bhavikjikadara/dog-and-cat-classification-dataset
 
-The dataset contains labeled images belonging to two classes:
+### Dataset Details:
 
-* Dog 🐶
-* Cat 🐱
+* Total Images: **25,000**
+* Dog Images: **12,500**
+* Cat Images: **12,500**
+* Balanced dataset across both classes
 
 ---
 
 ## ⚙️ Data Handling
 
-* Identified and handled corrupted images in the dataset
-* Ensured all images are properly formatted (RGB) for training
-* Prepared a clean dataset pipeline for stable model training
+* Detected and removed corrupted image files
+* Standardized all images to RGB format
+* Ensured clean and consistent input data for training
 
 ---
 
-## 🧠 Model Architecture
+## 🧠 Model
 
-The CNN model consists of:
+A custom CNN architecture was used with:
 
 * Convolutional layers for feature extraction
 * MaxPooling layers for dimensionality reduction
-* Fully connected dense layers for classification
-* Activation functions: ReLU and Sigmoid
+* Dense layers for classification
+* ReLU activation in hidden layers
+* Sigmoid activation in output layer
 * Optimizer: Adam
 * Loss Function: Binary Crossentropy
 
 ---
 
-## 📊 Results
+## 📊 Performance
 
 | Metric              | Value      |
 | ------------------- | ---------- |
@@ -51,12 +54,12 @@ The CNN model consists of:
 
 ---
 
-## 🚀 Highlights
+## 🚀 Key Points
 
-* Built a complete deep learning pipeline for image classification
-* Achieved ~93% validation accuracy using a custom CNN
+* Implemented an end-to-end CNN-based image classification pipeline
+* Achieved ~93% validation accuracy on unseen data
 * Handled real-world dataset issues like corrupted images
-* Structured and efficient model training workflow
+* Maintained balanced dataset for unbiased training
 
 ---
 
@@ -70,6 +73,6 @@ The CNN model consists of:
 
 ---
 
-## 🙌 Author
+## 👤 Author
 
 Raghav Gupta
